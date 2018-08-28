@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Create Account </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+    <ion-list>
+
+        <ion-item>
+          <ion-input floating type="text" #username placeholder="Username"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input floating type="email" #emailId placeholder="Email Id"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-datetime floating type="date" #dateBirth placeholder="Date Of Birth"></ion-datetime>
+        </ion-item>
+        <ion-item>
+          <ion-label>Select Gender </ion-label>
+          <ion-select #gender >
+            <ion-option value="M">Male</ion-option>
+            <ion-option value="F">Female</ion-option>
+          </ion-select>
+        </ion-item>
+      </ion-list>
+      <div id="topButtons">
+          <button  ion-button (click)="Register()" item-left> Register </button>
+      </div>
+
+</ion-content>

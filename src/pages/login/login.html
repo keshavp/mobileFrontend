@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Login
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list >
+    <ion-item>
+      <ion-label>Select Country </ion-label>
+      <ion-select  #country >
+        <ion-option value="IND">IND</ion-option>
+        <ion-option value="Pak">Pak</ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label>Mobile No.</ion-label>
+      <ion-input type="text"  name="mobileNo" #mobileNo></ion-input>
+    </ion-item>
+  </ion-list>
+<!--    <ion-item>
+      <ion-label>Description</ion-label>
+      <ion-textarea name="description"></ion-textarea>
+    </ion-item>
+  -->
+
+  <div id="topButtons">
+        <button  ion-button (click)="nextfun()" item-left> Next </button>
+        <button  ion-button (click)="signupUser()" item-left> signupUser </button>
+    </div>
+  </ion-content>
